@@ -1,0 +1,411 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    cursor: default;
+}
+
+*:active, :hover, :focus { 
+outline: 0; 
+outline-offset: 0; 
+}
+
+a{
+text-decoration:none;
+color:white;
+}
+
+@font-face {
+    font-family: Olga; /* Имя шрифта */
+    src:    url('https://nomail.com.ua/files/eot/bf1730613fc8094ed13dd93d81275990.eot?#iefix') format('embedded-opentype'),
+            url('https://nomail.com.ua/files/woff/bf1730613fc8094ed13dd93d81275990.woff') format('woff'),
+            url('https://nomail.com.ua/files/woff2/bf1730613fc8094ed13dd93d81275990.woff2') format('woff2');
+   }
+
+body{
+    background-color: #626262;
+}
+
+.main-container{
+    width: 960px;
+    margin: 20px auto;
+    /*background-image: url(image/image.png);*/
+    -moz-background-size: cover; /* Firefox 3.6+ */
+    -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: cover; /* Opera 9.6+ */
+    background-size: cover; /* Современные браузеры */
+}
+
+
+.logo-container{
+    width: 100%;
+    height: 95px;
+    text-align: center;
+    line-height: 95px;
+    color: white;
+    font-size: 85px;
+    margin: 20px auto;
+    font-family: Olga;
+}
+
+.menu{
+    width: 100%;
+    height: 30px;
+    margin: 20px auto;
+    color: #c1c1c1;
+}
+
+.menu-item{
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    font-size: 15px;
+    padding: 0 17px;
+    margin: 0 10px;
+    text-transform: uppercase;
+    cursor: default;
+    border: 1px solid #626262;
+}
+
+.menu-item:hover{
+    border: 1px solid #fff;
+}
+
+.menu-item:first-child{
+    margin-left: 0;
+}
+
+.menu-item:last-child{
+    float: right;
+    width: 250px;
+    margin-right: 0;
+    padding: 0;
+}
+
+.menu-item:last-child input{
+    border: 1px solid #c1c1c1;
+    width: 220px;
+    height: 100%;
+    float: left;
+    margin-left: 0;
+    padding: 0;
+    outline: none;
+    background: none;
+    padding: 10px;
+    color: #fdfdfd;
+}
+
+.menu-item:last-child button{
+    width: 30px;
+    height: 30px;
+    background-color: #fdfdfd;
+    cursor: pointer;
+    border: none;
+}
+
+.menu-item:last-child button: before{
+    font-size: 16px;
+    color: #626262;
+    
+}
+
+.menu-item:last-child:hover{
+    background-color: #626262;
+}
+
+.fa-search:before {
+    color: #626262
+}
+
+::-webkit-input-placeholder {color:#c1c1c1;}
+::-moz-placeholder          {color:#c1c1c1;}
+:-moz-placeholder           {color:#c1c1c1;}
+:-ms-input-placeholder      {color:#c1c1c1;}
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+
+input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+.photo-box{
+    padding-top: 90px;
+    padding-left: 140px;
+    height: 550px;
+    margin: 35px auto;
+    background-image: url(https://statusmen.ru/wp-content/uploads/2017/11/style.jpg);
+    background-repeat: no-repeat;
+    background-size: 170% auto;
+    background-position: -150px -100px;
+}
+
+.photo-box p:nth-child(3){
+    font-size: 64px;
+    margin: 10px auto;
+    font-weight: bold;
+}
+
+.photo-box p:first-child{
+    font-size: 30px;
+}
+
+.photo-box p:last-child{
+    font-size: 20px;
+}
+
+.info-box{
+    width: 100%;
+    height: 480px;
+    align-content: space-between;
+    color: white;
+    margin: 35px auto;
+}
+
+.info-box-one{
+    float: left;
+    display: inline-block;
+    width: 480px;
+    height: 480px;
+    background-color: #098f90;
+}
+
+.info-box-two{
+    width: 480px;
+    height: 480px;
+    float: right;
+    display: inline-block;
+
+    background-color: #212121;
+}
+
+.info-box-one p:nth-child(1){
+    margin-left: 60px;
+    margin-top: 110px;
+    font-size: 27px;
+    text-transform: uppercase;
+}
+
+.info-box-one hr{
+    width: 80px;
+    color: white;
+    margin-left: 60px;
+}
+
+.info-box-one p:last-child{
+    margin: 0 60px;
+    font-size: 19px;
+}
+
+.info-box-two p:first-child{
+    position: relative;
+    top: 100px;
+    left: 60px;
+    font-size: 70px;
+}
+
+.info-box-two p:nth-child(2){
+    margin-left: 150px;
+    margin-top: 30px;
+    font-size: 27px;
+    text-transform: uppercase;
+}
+
+.info-box-two hr{
+    width: 80px;
+    color: white;
+    margin-left: 150px;
+}
+
+.info-box-two p:last-child{
+    margin: 0 60px;
+    font-size: 19px;
+}
+
+.date-box{
+    width: 100%;
+    height: 480px;
+    margin: 35px auto;
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/24/09/59/guitar-1855798_960_720.jpg);
+    filter: grayscale(100%) brightness(60%);
+
+}
+
+.date-box table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    color: white;
+}
+
+.date-box table tr,td{
+    border: 1px solid rgba(255,255,255,.2);
+}
+
+.date-box table tr{
+    height: 240px;
+}
+
+.table-number{
+    position: relative;
+    top: -50px;
+    left: 20px;
+    font-size: 45px;
+}
+
+.table-date{
+    position: relative;
+    text-transform: uppercase;
+    top: -50px;
+    left: 20px;
+    font-size: 15px;
+}
+
+.table-footer{
+    position: relative;
+    top: 40px;
+    left: 20px;
+    font-size: 21px;
+}
+
+.subscribe-box{
+width: 100%;
+height:400px;
+background-color:rgba(250,250,250,.8);
+margin:35px auto;
+padding-top:60px;
+}
+
+.subscribe-box-content{
+width:560px;
+height: 300px;
+margin:auto;
+text-align: center;
+}
+
+.subscribe-box-content p:nth-child(1){
+font-size:35px;
+text-transform: uppercase;
+font-weight:bold;
+color:#1d1d1d;
+}
+
+.subscribe-box-content p:nth-child(2){
+font-size:21px;
+font-style:italic;
+color:#666;
+margin:40px auto;
+}
+
+.subscribe-menu{
+width:100%;
+height:100px;
+margin:60px auto;
+text-align:center;
+}
+
+.subscribe-menu button{
+width:160px;
+height:50px;
+border-radius:25px;
+background:#029091;
+color:white;
+font-size:20px;
+border-style: none;
+}
+
+.subscribe-menu input{
+width:370px;
+height:50px;
+background:none;
+border:none;
+border-bottom:2px solid #666;
+padding-left:20px;
+font-size:20px;
+}
+
+.footer-box{
+width: 100%;
+margin: 35px auto;
+background-color: #212121;
+display: flex;
+justify-content: center;
+}
+
+.footer-box .footer-item{
+margin-top:60px;
+margin-bottom:60px;
+width: 270px;
+color:white;
+word-wrap: break-word;
+}
+
+.footer-box .footer-item div{
+    margin-bottom: 20px;
+width: 200px;
+border-left: 5px solid #029091;
+padding-left: 5px;
+text-transform: uppercase;
+font-weight: bold;
+color: white;
+font-size:20px;
+}
+
+.footer-box .footer-item:nth-child(2) p{
+    margin: 10px 0;
+}
+
+.footer-box .footer-item:nth-child(2){
+margin: 60px 20px;
+display:inline-block;
+color:#aaa;
+text-transform: uppercase; 
+font-size:13px;
+line-height:20px;
+}
+
+.footer-box .footer-item:nth-child(2) p:hover{
+color:white;
+}
+.footer-box .footer-item:nth-child(3){
+display:inline-block;
+font-size:16px;
+line-height:25px;
+}
+
+.footer-box .footer-item:nth-child(1){
+display:inline-block;
+font-size:16px;
+line-height:22px;
+}
+
+.social-icons-box{
+width:100%;
+display: flex;
+justify-content: center;
+}
+
+.social-icons-box i{
+color:#fff;
+font-size: 27px;
+margin: 0 8px;
+}
+
+.social-icons-box i:hover{
+color: #029091;
+}
+
+.copyright-box{
+width: 100%;
+color:white;
+font-size:18px;
+text-align: center;
+margin-top:25px;
+}
